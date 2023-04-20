@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .center {
+  text-align: center;
+  color: white;
+}
+
+.center2 {
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+}
+
+.right {
+  text-align: right;
+  color: white;
+  font-size: 0.8em;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+    </style>
+</head>
+
+<body style="background-color: rgb(3, 152, 158)">
+
+  <!-- This is my main menu. It uses three anchor elements to link to each
+of the three pages. These are wrapped in a <div> element. The <div> has 
+its text-align set to padding-left in CSS via the menu class so that the 
+three links are in the right part of the page. -->
+
+    <div class="topnav" style="padding-left: 1000px" id="myTopnav">
+        <a href="home.html">HOME</a>
+        <a class="active" href="recentepisodes.html">RECENT EPISODES</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  </div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<h1 class="center"> &emsp;</h1>
+
+<h1 class="center"> TOXIC RELATIONSHIPS: EVERYTHING YOU SHOULD KNOW</h1>
+
+<!-- This is the image. The width of the image is limited to 100% to work correctly on mobile devices. It's also set to center. -->
+
+<center><img src="img/season2episode1.jpg" alt="A podcast banner" style="max-width: 100%"/></center>
+
+    <p class="center2"> In the first episode of season 2 of the Unpacking the News podcast, Monica Periade, the author of the book “The Anatomy of Happiness”,<br>and a wellbeing coach, will tell more about toxic relationships.</p>
+    <p class="center2"> &emsp;</p>
+
+    <p class="center2">In this episode, you will learn the following:</p>
+    <p class="center2">1. What are the types of toxic relationships?</p>
+    <p class="center2">2. How to overcome that?</p>
+    <p class="center2">3. What to do if a member of your family or friend may need help?</p>
+
+    <p class="center2"> &emsp;</p>
+
+    <!-- This is the audio player. It uses three file formats to allow the browser to pick the first format that it works with. It's wrapped in a <div> element. The <div> has also controls attributes to provide playback controls for the user. -->
+
+    <div align="center">
+    <audio controls>
+  <source src="aud/unpackingthenewsS02E01.ogg" type="audio/ogg" />
+  <source src="aud/unpackingthenewsS02E01.wav" type="audio/wav" />
+  <source src="aud/unpackingthenewsS02E01.mp3" type="audio/mpeg" />
+  <p>Your browser does not support the audio element. Please click <a href="aud/unpackingthenewsS02E01.mp3">here</a> to download an mp3 of the audio.</p>
+  </audio>
+  </div>
+
+  <p class="center2"> &emsp;</p>
+  <p class="center2"> &emsp;</p>
+
+    <p class="right"> Copyright ©2023  DAMIAN DOLNY. All Rights Reserved</p>
+
+      
+</body>
+</html>
